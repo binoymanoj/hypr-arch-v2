@@ -51,13 +51,14 @@
 
 ## Media and Multimedia
 ### Playback Control
+- `Super + M`: Opens Music player set in hrprland.conf (need to install g4music, if not already)
 - `Super + Alt + Space`: Play/Pause
 - `Super + Alt + Left/h`: Previous track
 - `Super + Alt + Right/l`: Next track
 
 ### Volume Control
-- `Super + Alt + Up`: Increase volume
-- `Super + Alt + Down`: Decrease volume
+- `Super + Alt + Up/h`: Increase volume
+- `Super + Alt + Down/j`: Decrease volume
 - `Super + Alt + M`: Mute/Unmute audio
 - `Super + Alt + D`: Mute/Unmute microphone
 
