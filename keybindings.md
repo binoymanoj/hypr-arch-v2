@@ -52,8 +52,8 @@
 ## Media and Multimedia
 ### Playback Control
 - `Super + Alt + Space`: Play/Pause
-- `Super + Alt + Left`: Previous track
-- `Super + Alt + Right`: Next track
+- `Super + Alt + Left/h`: Previous track
+- `Super + Alt + Right/l`: Next track
 
 ### Volume Control
 - `Super + Alt + Up`: Increase volume
