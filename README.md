@@ -6,6 +6,10 @@ A meticulously crafted Arch Linux configuration featuring Hyprland as the window
 
 ![Full Desktop Recording](./images/hypr-arch-recording.mkv)
 
+<video width="320" height="240" controls>
+  <source src="./images/hypr-arch-recording.mkv" type="video/mp4">
+</video>
+
 ---
 
 ## Features
