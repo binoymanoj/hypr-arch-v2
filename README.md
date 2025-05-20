@@ -4,10 +4,10 @@ A meticulously crafted Arch Linux configuration featuring Hyprland as the window
 
 ![Full Desktop Screenshot](./images/multi-tile.png)
 
-![Full Desktop Recording](./images/hypr-arch-recording.mkv)
+![Full Desktop Recording](./images/demo.mp4)
 
 <video width="320" height="240" controls>
-  <source src="./images/hypr-arch-recording.mkv" type="video/mp4">
+  <source src="./images/demo.mp4" type="video/mp4">
 </video>
 
 ---
@@ -28,6 +28,8 @@ A meticulously crafted Arch Linux configuration featuring Hyprland as the window
 ---
 
 ## Preview
+
+![Full Desktop Recording](./images/demo.gif)
 
 ### Full Desktop View
 ![Full Desktop Screenshot](./images/full-desktop.png)
