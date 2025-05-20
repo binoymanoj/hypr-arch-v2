@@ -1,20 +1,25 @@
-# Arch Linux with Hyprland Configuration
+# Hypr-Arch - Modern Arch Linux with Hyprland
 
-Welcome to my Arch Linux Hyprland setup! This repository contains my personal configuration files and an installation script (`install.sh`) to set up a beautiful, minimal, and functional desktop environment. 
+A meticulously crafted Arch Linux configuration featuring Hyprland as the window manager, offering a beautiful, minimal, and functional desktop environment that prioritizes both aesthetics and performance.
+
+![Full Desktop Screenshot](./images/multi-tile.png)
+
+![Full Desktop Recording](./images/hypr-arch-recording.mkv)
 
 ---
 
 ## Features
 
-- **Window Manager**: [Hyprland](https://github.com/hyprwm/Hyprland) for a dynamic and modern Wayland compositor.
-- **Terminal**: [Kitty](https://github.com/kovidgoyal/kitty) for a sleek and minimal terminal experience.
-- **Panel**: [Hyprpanel](https://github.com/Alexays/Waybar) for a customizable and beautiful status bar.
-- **Application Launcher**: [Rofi](https://hg.sr.ht/~scoopta/wofi) for a lightweight and stylish application launcher.
-- **Screen Lock**: [Swaylock](https://github.com/swaywm/swaylock) for a secure and customizable lock screen.
-- **Wallpaper Manager**: [Hyprpaper](https://github.com/hyprwm/Hyprland/wiki/Hyprpaper) to manage dynamic wallpapers.
-- **Idle Manager**: [Hypridle](https://github.com/hyprwm/Hyprland/wiki/Hypridle) for power management and idle actions.
-- **FastFetch**:
-- Yazi
+- **Window Manager**: [Hyprland](https://github.com/hyprwm/Hyprland) - A dynamic tiling Wayland compositor designed for customizability and performance
+- **Status Bar**: [HyprPanel](https://hyprpanel.com/) - A sleek, feature-rich panel for Hyprland
+- **Terminal**: [Ghostty](https://ghostty.org/) & [Kitty](https://github.com/kovidgoyal/kitty) - Modern GPU-accelerated terminals
+- **App Launcher**: [Rofi](https://github.com/in0ni/rofi-wayland) - Customizable application launcher with Wayland support
+- **Screen Lock**: [Swaylock Effects](https://github.com/mortie/swaylock-effects) - Secure and stylish screen lock with blur effects
+- **Wallpaper Manager**: [Hyprpaper](https://github.com/hyprwm/hyprpaper) - Efficient wallpaper daemon for Hyprland
+- **Idle Management**: [Hypridle](https://github.com/hyprwm/hypridle) - Power management and idle actions
+- **File Manager**: [Nautilus](https://apps.gnome.org/Nautilus/) & [Yazi](https://github.com/sxyazi/yazi) - Graphical and TUI file managers
+- **System Info**: [FastFetch](https://github.com/fastfetch-cli/fastfetch) - A fast system information tool
+- **Power Management**: Power Profiles Daemon - Automated power profiles management
 
 ---
 
@@ -25,7 +30,7 @@ Welcome to my Arch Linux Hyprland setup! This repository contains my personal co
 
 ### Individual Components
 
-- **Terminal (Ghostty)**:
+- **Terminal (Kitty)**:
   ![Ghostty Screenshot](./images/ghostty.png)
 
 - **Waybar**:
