@@ -4,11 +4,7 @@ A meticulously crafted Arch Linux configuration featuring Hyprland as the window
 
 ![Full Desktop Screenshot](./images/multi-tile.png)
 
-![Full Desktop Recording](./images/demo.mp4)
-
-<video width="320" height="240" controls>
-  <source src="./images/demo.mp4" type="video/mp4">
-</video>
+![Full Desktop Recording](./images/demo.gif)
 
 ---
 
@@ -29,24 +25,26 @@ A meticulously crafted Arch Linux configuration featuring Hyprland as the window
 
 ## Preview
 
-![Full Desktop Recording](./images/demo.gif)
-
 ### Full Desktop View
-![Full Desktop Screenshot](./images/full-desktop.png)
+![Full Desktop Screenshot](./images/multi-tile.png)
 
 ### Individual Components
 
 - **Terminal (Kitty)**:
-  ![Ghostty Screenshot](./images/ghostty.png)
+  ![Ghostty Screenshot](./images/terminal.png)
 
-- **Waybar**:
-  ![Waybar Screenshot](./images/waybar.png)
+- **Hyprpanel**:
+  ![Waybar Screenshot](./images/hyprpanel.png)
 
-- **Wofi**:
-  ![Wofi Screenshot](./images/wofi.png)
+- **Rofi**:
+  ![Rofi Screenshot](./images/rofi.png)
 
-- **Notifications (Dunst)**:
-  ![Dunst Screenshot](./images/dunst.png)
+- **Notifications**:
+  ![Notification Screenshot](./images/notification.png)
+  ![Notification Tray Screenshot](./images/notification-tray.png)
+
+- **Neovim (Code Editor)**:
+  ![Neovim Screenshot](./images/neovim.png)
 
 - **Screen Lock (Swaylock)**:
   ![Swaylock Screenshot](./images/swaylock.jpg)
@@ -65,8 +63,8 @@ To replicate this setup, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/binoymanoj/Hypr-Arch.git
-   cd Hypr-Arch/
+   git clone https://github.com/binoymanoj/hypr-arch-v2.git
+   cd hypr-arch-v2/
    ```
 
 2. Make the installation script executable:
@@ -101,7 +99,7 @@ Screenshots are included in the `./images` directory for reference.
 
 ## Keybindings
 
-Keybindings are included in keybindings.md file in the root of this repository.
+Keybindings are included in `keybindings.md` file in the root of this repository.
 
 ---
 
