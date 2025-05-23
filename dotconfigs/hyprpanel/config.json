@@ -15,7 +15,7 @@
   "theme.notification.enableShadow": false,
   "notifications.showActionsOnHover": false,
   "menus.clock.time.hideSeconds": true,
-  "menus.clock.weather.enabled": false
+  "menus.clock.weather.enabled": false,
   "menus.clock.weather.location": "",
   "menus.clock.weather.unit": "metric",
   "menus.dashboard.powermenu.avatar.image": "/home/cyph3r/Pictures/My-pics/elli0t.jpeg",
