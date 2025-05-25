@@ -14,7 +14,7 @@ A meticulously crafted Arch Linux configuration featuring Hyprland as the window
 - **Status Bar**: [HyprPanel](https://hyprpanel.com/) - A sleek, feature-rich panel for Hyprland
 - **Terminal**: [Ghostty](https://ghostty.org/) & [Kitty](https://github.com/kovidgoyal/kitty) - Modern GPU-accelerated terminals
 - **App Launcher**: [Rofi](https://github.com/in0ni/rofi-wayland) - Customizable application launcher with Wayland support
-- **Screen Lock**: [Hyprlock]([https://github.com/mortie/swaylock-effects](https://github.com/hyprwm/hyprlock)) - Secure and stylish screen lock with blur effects
+- **Screen Lock**: [Hyprlock](https://github.com/hyprwm/hyprlock) - Secure and stylish screen lock with blur effects
 - **Wallpaper Manager**: [Hyprpaper](https://github.com/hyprwm/hyprpaper) - Efficient wallpaper daemon for Hyprland
 - **Idle Management**: [Hypridle](https://github.com/hyprwm/hypridle) - Power management and idle actions
 - **File Manager**: [Nautilus](https://apps.gnome.org/Nautilus/) & [Yazi](https://github.com/sxyazi/yazi) - Graphical and TUI file managers
