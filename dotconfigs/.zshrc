@@ -276,11 +276,13 @@ alias gds='git diff --staged'
 alias gl='git pull'
 alias gp='git push'
 alias gs='git status'
+alias gss='git status --short'
 alias gst='git status -sb'
 alias glog='git log --oneline --decorate --graph'
 alias gloga='git log --oneline --decorate --graph --all'
 alias greset='git reset'
 alias gclean='git clean -fd'
+alias gcl='git clone'
 
 
 

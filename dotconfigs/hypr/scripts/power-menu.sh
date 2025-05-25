@@ -25,6 +25,7 @@ case $selected_option in
         systemctl suspend
         ;;
     "$lock")
-        swaylock
+        # swaylock
+        hyprlock
         ;;
 esac
