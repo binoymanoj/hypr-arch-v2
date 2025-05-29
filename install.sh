@@ -134,7 +134,7 @@ run_sudo_command "Installing required packages" pacman -S --noconfirm hyprland f
     nautilus xdg-desktop-portal-hyprland rofi-wayland rofi-emoji kitty \
     hyprpaper hypridle neovim blueman bluez bluez-utils network-manager-applet pavucontrol \
     playerctl libnotify cliphist wl-clipboard grim slurp wlsunset imagemagick pipewire pipewire-pulse zoxide \
-    brightnessctl zsh polkit-gnome ufw plocate fzf yazi gnome-system-monitor fwupd exfat-utils ntfs-3g hyprpicker power-profiles-daemon hyprlock
+    brightnessctl zsh polkit-gnome ufw plocate fzf yazi gnome-system-monitor fwupd exfat-utils ntfs-3g hyprpicker power-profiles-daemon hyprlock fd
 # power-profiles-daemon - used by hyprpanel (instead of tlp)
 # if using waybar the following 2 packages needs to be installed
 # dunst  - replaced with hyprpanel installation
