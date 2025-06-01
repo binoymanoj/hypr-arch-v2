@@ -133,12 +133,13 @@ cd - || exit  # Return to original directory
 run_sudo_command "Installing required packages" pacman -S --noconfirm hyprland fastfetch ttf-jetbrains-mono-nerd noto-fonts-emoji \
     nautilus xdg-desktop-portal-hyprland rofi-wayland rofi-emoji kitty \
     hyprpaper hypridle neovim blueman bluez bluez-utils network-manager-applet pavucontrol \
-    playerctl libnotify cliphist wl-clipboard grim slurp wlsunset imagemagick pipewire pipewire-pulse zoxide \
-    brightnessctl zsh polkit-gnome ufw plocate fzf yazi gnome-system-monitor fwupd exfat-utils ntfs-3g hyprpicker power-profiles-daemon hyprlock skim
+    playerctl libnotify cliphist wl-clipboard grim slurp imagemagick pipewire pipewire-pulse zoxide \
+    brightnessctl zsh polkit-gnome ufw plocate fzf yazi gnome-system-monitor fwupd exfat-utils ntfs-3g hyprpicker power-profiles-daemon hyprlock hyprsunset skim
 # power-profiles-daemon - used by hyprpanel (instead of tlp)
 # if using waybar the following 2 packages needs to be installed
 # dunst  - replaced with hyprpanel installation
 # waybar - replaced waybar with ags-hyprpanel-git (hyprpanel)
+# wlsunset - replaced with hyprsunset
 # Installing AUR packages
 run_command "Installing AUR packages" yay -S --noconfirm brave-bin bibata-cursor-theme  zsh-completions nvm eog wofi-emoji ags-hyprpanel-git ghostty
 # replaced swaylock-effects with hyprlock
