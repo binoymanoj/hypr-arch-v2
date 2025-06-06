@@ -35,42 +35,75 @@ require("astronvim").setup()
 
 -- DAP setup for JS, TS files
 -- js-debug-adapter    # Install this from Mason
-local dap = require "dap"
+-- local dap = require "dap"
+-- local mason_registry = require("mason-registry")
+--
+-- -- Set up the debug adapter
+-- require("dap").adapters["pwa-node"] = {
+--   type = "server",
+--   host = "localhost",
+--   port = "${port}",
+--   executable = {
+--     command = "node",
+--     args = {
+--       require("mason-registry").get_package("js-debug-adapter"):get_install_path() .. "/js-debug/src/dapDebugServer.js",
+--       "${port}",
+--     },
+--   },
+-- }
+-- -- Add JavaScript configurations
+-- require("dap").configurations.javascript = {
+--   {
+--     type = "pwa-node",
+--     request = "launch",
+--     name = "Launch file",
+--     program = "${file}",
+--     cwd = "${workspaceFolder}",
+--   },
+--   {
+--     type = "pwa-node",
+--     request = "attach",
+--     name = "Attach",
+--     processId = require("dap.utils").pick_process,
+--     cwd = "${workspaceFolder}",
+--   },
+-- }
+-- -- Also add TypeScript configurations
+-- require("dap").configurations.typescript = require("dap").configurations.javascript
 
--- Set up the debug adapter
-require("dap").adapters["pwa-node"] = {
-  type = "server",
-  host = "localhost",
-  port = "${port}",
-  executable = {
-    command = "node",
-    args = {
-      require("mason-registry").get_package("js-debug-adapter"):get_install_path() .. "/js-debug/src/dapDebugServer.js",
-      "${port}",
-    },
-  },
-}
-
--- Add JavaScript configurations
-require("dap").configurations.javascript = {
-  {
-    type = "pwa-node",
-    request = "launch",
-    name = "Launch file",
-    program = "${file}",
-    cwd = "${workspaceFolder}",
-  },
-  {
-    type = "pwa-node",
-    request = "attach",
-    name = "Attach",
-    processId = require("dap.utils").pick_process,
-    cwd = "${workspaceFolder}",
-  },
-}
-
--- Also add TypeScript configurations
-require("dap").configurations.typescript = require("dap").configurations.javascript
+-- Go dap setup
+-- local go_debug_adapter_pkg = mason_registry.get_package("go-debug-adapter")
+-- local go_debug_adapter_path = go_debug_adapter_pkg:get_install_path()
+-- dap.adapters.go = {
+--   type = "server",
+--   port = "${port}",
+--   executable = {
+--     command = go_debug_adapter_path .. "/extension/dist/debugAdapter.js",
+--     args = { "${port}" },
+--   },
+-- }
+-- dap.configurations.go = {
+--   {
+--     type = "go",
+--     name = "Debug file",
+--     request = "launch",
+--     program = "${file}",
+--   },
+--   {
+--     type = "go",
+--     name = "Debug test (current file)",
+--     request = "launch",
+--     mode = "test",
+--     program = "${file}",
+--   },
+--   {
+--     type = "go",
+--     name = "Attach to process",
+--     request = "attach",
+--     processId = require('dap.utils').pick_process,
+--     cwd = "${workspaceFolder}",
+--   },
+-- }
 
 -- Load custom keybindings
 local mappings = require "mappings"
@@ -89,20 +122,30 @@ end
 -- Macro for console.log("<text> :", <text>);
 local esc = vim.api.nvim_replace_termcodes("<Esc>", true, true, true)
 
--- Macro for console.log()
-vim.fn.setreg("l", "yoconsole.log('" .. esc .. "pa:', " .. esc .. "pa);" .. esc .. "gs") -- with save
--- vim.fn.setreg("l", "yoconsole.log('" .. esc .. "pa :', " .. esc .. "pa);" .. esc .. "") -- without save
+-- Create a new augroup for JS/TS log macro
+vim.api.nvim_create_augroup("JSLogMacro", { clear = true })
+vim.api.nvim_create_autocmd("FileType", {
+  group = "JSLogMacro",
+  pattern = { "javascript", "typescript", "javascriptreact", "typescriptreact" }, -- js, ts, jsx, tsx
+  callback = function()
+    -- Set 'l' register macro: console.log('<var>:', <var>);
+    vim.fn.setreg("l", "yoconsole.log('" .. esc .. "pa:', " .. esc .. "pa);" .. esc .. "gs")
+  end,
+})
 
+-- Create a new augroup for Go log macro
+vim.api.nvim_create_augroup("GoLogMacro", { clear = true })
+vim.api.nvim_create_autocmd("FileType", {
+  group = "GoLogMacro",
+  pattern = { "go" },
+  callback = function()
+    -- Set 'l' register macro: log.Printf("<var>: %v", <var>)
+    vim.fn.setreg("l", "yolog.Printf(\"" .. esc .. "pa: %v\", " .. esc .. "pa)" .. esc .. "gs")
+  end,
+})
+
+-- Older Version
 -- Macro for console.log()
--- Only apply to TS & JS files 
--- vim.api.nvim_create_augroup("JSLogMacro", { clear = true })
---
--- vim.api.nvim_create_autocmd("FileType", {
---   group = "JSLogMacro",
---   pattern = { "javascript", "typescript" }, -- only trigger for .js, .ts filetypes
---   callback = function()
---     vim.fn.setreg("l", "yoconsole.log('" .. esc .. "pa :', " .. esc .. "pa);" .. esc .. "") -- without save
---     -- vim.fn.setreg("l", "yoconsole.log('" .. esc .. "pa :', " .. esc .. "pa);" .. esc .. "s") -- with save
---   end,
--- })
+-- vim.fn.setreg("l", "yoconsole.log('" .. esc .. "pa:', " .. esc .. "pa);" .. esc .. "gs") -- with save
+-- vim.fn.setreg("l", "yoconsole.log('" .. esc .. "pa :', " .. esc .. "pa);" .. esc .. "") -- without save
 

@@ -1,11 +1,11 @@
 * {
     bg-col: #11111bcc;
     bg-col-light: #313244;
-    border-col: #bd93f9;
+    border-col: #9199CB;
     selected-col: #313244;
-    purple: #bd93f9;
+    purple: #9199CB;
     fg-col: #cdd6f4;
-    fg-col2: #bd93f9;
+    fg-col2: #9199CB;
     width: 600px;
 }
 
@@ -26,6 +26,7 @@ inputbar {
     background-color: transparent;
     border-radius: 10px;
     padding: 2px;
+    margin: 0px 5px 0px 0px;
 }
 
 prompt {

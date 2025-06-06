@@ -257,12 +257,14 @@ alias cd="z"             # replacing cd with z (zoxide) for jumping to location 
 alias ff="fastfetch"     # ff for fastfetch
 alias vi="nvim"          # vi for neovim
 alias zta="zathura"      # zta for zathura PDF viewer
+alias open="xdg-open"    # xdg-open with open
 
 # Git Aliases
 alias g='git'
 alias gf='git fetch'
 alias ga='git add'
 alias gaa='git add --all'
+alias gap='git add --patch'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gc='git commit -v'
@@ -284,7 +286,17 @@ alias greset='git reset'
 alias gclean='git clean -fd'
 alias gcl='git clone'
 
+# Task warrior Aliases
+alias t='task'
+alias ta='task add'
+alias tc='task context'
 
+# Run Tmux on terminal open (commented out for now, sometimes it gets annoying. It opens default session on every terminal opened)
+# if command -v tmux &> /dev/null; then
+#   if [[ -z "$TMUX" ]] && [[ -z "$SSH_TTY" ]]; then
+#     tmux attach -t default || tmux new -s default
+#   fi
+# fi
 
 #########################################
 ############## END OF FILE ##############

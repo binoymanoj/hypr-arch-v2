@@ -14,7 +14,7 @@ return {
         "typescript-language-server",
         "emmet-ls",
         "tailwindcss-language-server",
-        -- "eslint-lsp", -- sometimes causing unwanted issues in ts files
+        "eslint-lsp", -- sometimes causing unwanted issues in ts files
       },
     },
   },
