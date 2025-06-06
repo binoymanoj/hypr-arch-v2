@@ -2,7 +2,7 @@
 
 A meticulously crafted Arch Linux configuration featuring Hyprland as the window manager, offering a beautiful, minimal, and functional desktop environment that prioritizes both aesthetics and performance.
 
-![Full Desktop Screenshot](./images/multi-tile.png)
+![Full Desktop Screenshot](./images/full-screen-preview.png)
 
 ![Full Desktop Recording](./images/demo.gif)
 
@@ -26,7 +26,7 @@ A meticulously crafted Arch Linux configuration featuring Hyprland as the window
 ## Preview
 
 ### Full Desktop View
-![Full Desktop Screenshot](./images/multi-tile.png)
+![Full Desktop Screenshot](./images/full-screen-preview.png)
 
 ### Individual Components
 
