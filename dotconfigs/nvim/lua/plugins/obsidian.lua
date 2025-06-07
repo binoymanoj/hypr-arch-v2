@@ -5,10 +5,10 @@ return {
   lazy = true,
   -- Only load this plugin for markdown files in your vault
   event = {
-    "BufReadPre " .. vim.fn.expand "~/Obsidian/*.md",
-    "BufNewFile " .. vim.fn.expand "~/Obsidian/*.md",
+    "BufReadPre " .. vim.fn.expand "~/Notes/*.md",
+    "BufNewFile " .. vim.fn.expand "~/Notes/*.md",
   },
-  -- fix in windows
+  -- fix for windows
   -- event = {
   --       -- Using forward slashes instead of backslashes
   --       "BufReadPre C:/Users/binoy/Obsidian-Git-Sync/**/*",
@@ -21,7 +21,7 @@ return {
     workspaces = {
       {
         name = "Notes",
-        path = "~/Obsidian",
+        path = "~/Notes",
       },
     },
     completion = {
