@@ -286,6 +286,29 @@ alias greset='git reset'
 alias gclean='git clean -fd'
 alias gcl='git clone'
 
+# Pacman Aliases
+alias paci='sudo pacman -S --noconfirm'           # Install a package
+alias pacr='sudo pacman -Rns'                     # Remove a package along with unused dependencies
+alias pacu='sudo pacman -Syu --noconfirm'         # Update system
+alias pacs='pacman -Ss'                           # Search for a package
+alias pacl='pacman -Qe'                           # List installed packages
+alias pacorph='pacman -Qdt'                       # List explicitly installed packages not required as dependencies
+alias pacclean='sudo pacman -Rns $(pacman -Qdtq)' # Remove orphaned packages
+alias paccleanall='sudo paccache -r'              # Clear package cache (keeping the last 3 versions)
+alias paccleanfull='sudo paccache -r -k0'         # Full cache clean (dangerous, deletes all)
+alias paciinfo='pacman -Si'                       # Show package info
+alias pacinfo='pacman -Qi'                        # Show info of an installed package
+
+# Yay Aliases
+alias yayi='yay -S --noconfirm'                   # Install a package from AUR or repo
+alias yayr='yay -Rns'                             # Remove a package
+alias yayu='yay -Syu --noconfirm'                 # Update all packages (official + AUR)
+alias yays='yay -Ss'                              # Search for a package in AUR and repos
+alias yayinfo='yay -Si'                           # Show info about a package
+alias yayclean='yay -Yc'                          # Remove orphaned packages
+alias yayedit='yay -S --editmenu --nodiffmenu'    # Edit PKGBUILD before installing (interactive)
+alias yayoutdated='yay -Qua'                      # Check for outdated AUR packages
+
 # Task warrior Aliases
 alias t='task'
 alias ta='task add'

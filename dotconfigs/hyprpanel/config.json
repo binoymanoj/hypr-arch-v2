@@ -156,6 +156,7 @@
         "media"
       ],
       "right": [
+        "netstat",
         "network",
         "bluetooth",
         "systray",
